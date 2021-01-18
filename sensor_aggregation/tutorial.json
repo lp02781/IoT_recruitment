@@ -1,0 +1,65 @@
+{
+  "INTERFACE": "CAN", 
+  "UDSDIDS": [
+    {
+      "NAME": "ECU SERIAL NUMBER", 
+      "DID": "0xF18C", 
+      "FORMAT": "ASCII", 
+      "EXPECTED_VALUE": ""
+    }, 
+    {
+      "NAME": "ECU DEL. ASSEMBLY NUMBER", 
+      "DID": "0xF113", 
+      "FORMAT": "ASCII", 
+      "EXPECTED_VALUE": ""
+    }, 
+    {
+      "NAME": "BOOT SOFT. ID.", 
+      "DID": "0xF180", 
+      "FORMAT": "ASCII", 
+      "EXPECTED_VALUE": ""
+    }, 
+    {
+      "NAME": "BOOT SOFT. VERSION NUMBER", 
+      "DID": "0xF109", 
+      "FORMAT": "ASCII", 
+      "EXPECTED_VALUE": ""
+    }, 
+    {
+      "NAME": "ACTIVE DIAGNOSTIC SESSION", 
+      "DID": "0xF186", 
+      "FORMAT": "HEX", 
+      "EXPECTED_VALUE": ""
+    }, 
+    {
+      "NAME": "ENERGY SAVING MODE", 
+      "DID": "0x100A", 
+      "FORMAT": "ASCII", 
+      "EXPECTED_VALUE": ""
+    }, 
+    {
+      "NAME": "SVK ACTUAL", 
+      "DID": "0xF101", 
+      "FORMAT": "HEX", 
+      "EXPECTED_VALUE": ""
+    }, 
+    {
+      "NAME": "CONTROL ENERGY SAVING MODE", 
+      "DID": "0x0F0C", 
+      "FORMAT": "ASCII", 
+      "EXPECTED_VALUE": ""
+    }, 
+    {
+      "NAME": "IN DELIVERY STATUS", 
+      "DID": "0xD265", 
+      "FORMAT": "ASCII", 
+      "EXPECTED_VALUE": ""
+    }, 
+    {
+      "NAME": "IN DELIVERY START", 
+      "DID": "0xA262", 
+      "FORMAT": "ASCII", 
+      "EXPECTED_VALUE": ""
+    }
+  ]
+}
