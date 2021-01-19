@@ -58,7 +58,7 @@ namespace pt = boost::posix_time;
 int main()
 {
     ptree pt;
-    read_json("/home/mfikih15/IoT_recruitment/JSON_Files/sensor_data.json", pt);
+    read_json("../JSON_Files/sensor_data.json", pt);
 	
 	for (auto& node : pt.get_child("array")){
 		if(node.second.get<int>("id")==1){
