@@ -4,6 +4,11 @@
 #include <boost/property_tree/json_parser.hpp>
 #include <vector>
 #include "json.hpp"
+#include <vector>
+#include <fstream>
+#include <nlohmann/json.hpp>
+
+using json = nlohmann::json;
 
 using namespace std;
 using namespace restc_cpp;
@@ -29,10 +34,15 @@ string address;
 string suite;
 string city;
 string zipcode;
+namespace j = boost::property_tree::json_parser;
 
 void DoSomethingInteresting(Context& ctx) {
     auto reply = ctx.Get("http://jsonplaceholder.typicode.com/users");
-	//cout<<reply["id"]<<endl;
+	auto message = reply->GetBodyAsString();	
+    //json file = json::parse(message);
+    std::istringstream iss(message);
+    ptree pt;
+    j::read_json(iss, pt);
 }
 
 int main() {
