@@ -32,7 +32,7 @@ string zipcode;
 
 void DoSomethingInteresting(Context& ctx) {
     auto reply = ctx.Get("http://jsonplaceholder.typicode.com/users");
-	cout<<reply["id"]<<endl;
+	//cout<<reply["id"]<<endl;
 }
 
 int main() {
